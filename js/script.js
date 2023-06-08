@@ -2,8 +2,10 @@
 {
   function playGame(playerInput){
 
-    clearMessages(); 
-  
+    const clearMessages = clearMessages(){
+      console.log('Remove all previously displayed messages');
+    };
+
     function getMoveName(moveId){
       console.log('Wybrany ruch to:'+ moveId)
       if (moveId == 1){
@@ -25,9 +27,8 @@
 
     console.log('Wylosowana liczba to: ' + randomNumber);
 
-    const computerMove = getMoveName(randomNumber);
-
-    const playerMove = getMoveName(playerInput);
+    const computerMove = getMoveName(randomNumber),
+          playerMove = getMoveName(playerInput);
 
 
     function displayResult(argComputerMove, argPlayerMove) {
