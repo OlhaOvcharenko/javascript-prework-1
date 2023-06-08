@@ -1,12 +1,11 @@
 
 {
+  
   function playGame(playerInput){
 
-    const clearMessages = clearMessages(){
-      console.log('Remove all previously displayed messages');
-    };
+    clearMessages();
 
-    function getMoveName(moveId){
+    function getMoveName (moveId){
       console.log('Wybrany ruch to:'+ moveId)
       if (moveId == 1){
         return 'kamień';
@@ -76,6 +75,8 @@
   playScissors.addEventListener('click', function() {
     playGame("3");
   });
+
+
 }
 
 
