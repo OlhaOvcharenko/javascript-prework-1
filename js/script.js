@@ -1,11 +1,11 @@
 
 {
   
-  function playGame(playerInput){
+  const playGame = function(playerInput) {
 
     clearMessages();
 
-    function getMoveName (moveId){
+    const getMoveName = function(moveId) {
       console.log('Wybrany ruch to:'+ moveId)
       if (moveId == 1){
         return 'kamień';
@@ -29,8 +29,8 @@
     const computerMove = getMoveName(randomNumber),
           playerMove = getMoveName(playerInput);
 
-
-    function displayResult(argComputerMove, argPlayerMove) {
+    
+    const displayResult = function(argComputerMove, argPlayerMove) {
 
       console.log('moves:', argComputerMove, argPlayerMove);
 
@@ -56,7 +56,7 @@
     displayResult(computerMove, playerMove);
   }
 
-  function buttonClicked(playerInput) {
+  const buttonClicked = function(playerInput) {
     printMessage('Zrobiłeś swój wybór!');
     playGame(playerInput);
   }
