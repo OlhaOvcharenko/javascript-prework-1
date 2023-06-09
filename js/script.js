@@ -27,7 +27,7 @@
     console.log('Wylosowana liczba to: ' + randomNumber);
 
     const computerMove = getMoveName(randomNumber),
-          playerMove = getMoveName(playerInput);
+    playerMove = getMoveName(playerInput);
 
     
     const displayResult = function(argComputerMove, argPlayerMove) {
